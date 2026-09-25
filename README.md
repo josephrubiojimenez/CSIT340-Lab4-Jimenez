@@ -1,16 +1,47 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website rebuilt using React and Tailwind CSS. This project refactors a static HTML portfolio into a modular, component-based React architecture using Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Component-Based Architecture: Broken down into 15 reusable React components under src/components/.
+- Responsive Design: Styled using Tailwind CSS to ensure seamless display across mobile, tablet, and desktop views.
+- Props Passing & Destructuring: Clean data flow with destructured props across all functional components.
+- Structured Sections:
+  - Navbar & Navigation: Sticky header with smooth anchor navigation.
+  - Hero: Introduction header and quick action buttons.
+  - About: Personal background and quick facts grid.
+  - Skills: Categorized technical skill badges (Languages, Frameworks, Tools).
+  - Projects: Itemized portfolio project cards with repository links.
+  - Experience: Timeline breakdown of academic and project experience.
+  - Contact: Reachable contact links and profiles.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Frontend: React (Vite)
+- Styling: Tailwind CSS
+- Version Control: Git & GitHub
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+│   ├── AboutSection.jsx
+│   ├── ContactLink.jsx
+│   ├── ContactSection.jsx
+│   ├── ExperienceSection.jsx
+│   ├── Fact.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── Navbar.jsx
+│   ├── NavLink.jsx
+│   ├── ProjectCard.jsx
+│   ├── ProjectsSection.jsx
+│   ├── SectionHeading.jsx
+│   ├── SkillTag.jsx
+│   ├── SkillsSection.jsx
+│   └── TimelineItem.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
